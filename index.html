@@ -12,22 +12,66 @@
     <title>Espacio PACHA</title>
 </head>
 <body>
-    <!-- Barra superior -->
-    <nav class="navbar">
-        <div><img src="./img/LOGO_ESPACIOPACHA_AL16FEB25.png" alt="Logo" class="logo"></div>
-            <div class="hamburguesa" onclick="toggleMenu()">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fas fa-close" id="close-menu" style="display: none;"></i> 
-            </div>
-        <div class="menu">
-            <a href="#inicio">PACHA LOGOS</a>
-            <a href="#quienes-somos">KAIRÓS PACHA</a>
-            <a href="#servicios">CONVERSATORIO</a>
-            <a href="#">ATELIER</a>
-            <a href="#">COMUNIDAD PACHA</a>
-            <a href="#contacto">CONTACTO</a>
-        </div>
-    </nav>
+<!-- Barra superior -->
+<nav class="navbar">
+    <div><a href="/index.html"><img src="./img/LOGO_ESPACIOPACHA_AL16FEB25.png" alt="Logo" class="logo"></a></div>
+    <div class="hamburguesa" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i> <!-- Ícono de hamburguesa -->
+        <i class="fas fa-close" id="close-menu" style="display: none;"></i> <!-- Ícono de cerrar -->
+    </div>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#servicios">PACHA LOGOS</a>
+                <ul class="submenu">
+                    <li><a href="#escritos">Escritos</a></li>
+                    <li><a href="#reflexiones">Reflexiones</a></li>
+                    <li><a href="#ideas">Ideas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#servicios">KAIRÓS PACHA</a>
+                <ul class="submenu">
+                    <li><a href="#asistidos">Asistidos</a></li>
+                    <li><a href="#parejas">Parejas</a></li>
+                    <li><a href="#talleres">Talleres</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#servicios">CONVERSATORIO</a>
+                <ul class="submenu">
+                    <li><a href="#preguntas">Tus Preguntas</a></li>
+                    <li><a href="#ideas">Tus Ideas</a></li>
+                    <li><a href="#compar">Nuestro Compar</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#servicios">ATELIER</a>
+                <ul class="submenu">
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#musica">Música</a></li>
+                    <li><a href="#diseño">Diseño</a></li>
+                    <li><a href="#poesia">Poesía</a></li>
+                    <li><a href="#escrito">Escritos</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#servicios">COMUNIDAD PACHA</a>
+                <ul class="submenu">
+                    <li><a href="#eventos">Quienes Somos</a></li>
+                    <li><a href="#sumate">Sumate</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">CONTACTO</a>
+                <ul class="submenu">
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#contacto">Formulario</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
 
     <!-- Pantalla de inicio: video a pantalla completa -->
     <section id="inicio" class="fullscreen-video">
@@ -53,35 +97,62 @@
     
  </div>
     <section id="servicios" class="section">
-        <div class="servicio" onclick="mostrarServicio('terapia-pareja')">
-            <h3>Terapia de pareja</h3>
+        <div class="servicio servicio-img-1" onclick="mostrarServicio('Pacha-logos')">
+            <h3>Pacha<br>Logos</h3>
         </div>
-        <div class="servicio" onclick="mostrarServicio('casamientos')">
-            <h3>Casamientos</h3>
+        <div class="servicio servicio-img-2" onclick="mostrarServicio('Kairos-pacha')">
+            <h3>Kairós<br>Pacha</h3>
         </div>
-        <div class="servicio" onclick="mostrarServicio('terapias')">
-            <h3>Terapias</h3>
+        <div class="servicio servicio-img-3" onclick="mostrarServicio('conversatorio')">
+            <h3>Conversatorio</h3>
         </div>
-        <div class="servicio" onclick="mostrarServicio('acompañamientos')">
+        <div class="servicio servicio-img-4" onclick="mostrarServicio('atelier')">
+            <h3>Atelier</h3>
+        </div>
+        <div class="servicio servicio-img-5" onclick="mostrarServicio('comunidad-pacha')">
+            <h3>Comunidad<br>Pacha</h3>
+        </div>
+        <div class="servicio servicio-img-6" onclick="mostrarServicio('acompañamientos')">
             <h3>Acompañamientos</h3>
         </div>
         <!-- Agrega más servicios aquí -->
     </section>
 
     <!-- Pantalla de cada servicio -->
-    <section id="terapia-pareja" class="servicio-detalle">
-        <h2>Terapia de pareja</h2>
-        <p>Información detallada sobre la terapia de pareja.</p>
+    <section id="Pacha-logos" class="servicio-detalle">
+        <h2>Pacha Logos</h2>
+        <p>Escritos</p>
+        <p>Reflexiones</p>
+        <p>Ideas</p>
         <a href="#inicio">Volver a servicios</a>
     </section>
-    <section id="casamientos" class="servicio-detalle">
-        <h2>Casamientos</h2>
-        <p>Información detallada sobre los casamientos.</p>
+    <section id="Kairos-pacha" class="servicio-detalle">
+        <h2>Kairós Pacha</h2>
+        <p>Asistidos</p>
+        <p>Parejas</p>
+        <p>Talleres</p>
         <a href="#servicios">Volver a servicios</a>
     </section>
-    <section id="terapias" class="servicio-detalle">
-        <h2>Terapias</h2>
-        <p>Información detallada sobre las terapias.</p>
+    <section id="conversatorio" class="servicio-detalle">
+        <h2>Conversatorio</h2>
+        <p>Tus preguntas</p>
+        <p>Tus ideas</p>
+        <p>Nuestro Compar</p>
+        <a href="#servicios">Volver a servicios</a>
+    </section>
+    <section id="atelier" class="servicio-detalle">
+        <h2>Atelier</h2>
+        <p>Galería</p>
+        <p>Música</p>
+        <p>Diseño</p>
+        <p>Poesía</p>
+        <p>Escritos</p>
+        <a href="#servicios">Volver a servicios</a>
+    </section>
+    <section id="comunidad-pacha" class="servicio-detalle">
+        <h2>Comunidad Pacha</h2>
+        <p>Quienes Somos</p>
+        <p>Sumate</p>
         <a href="#servicios">Volver a servicios</a>
     </section>
     <section id="acompañamientos" class="servicio-detalle">
@@ -90,28 +161,36 @@
         <a href="#servicios">Volver a servicios</a>
     </section>
         <!-- Formulario de contacto -->
-        <section id="contacto" class="section">
-            <h2>Contacto</h2>
-            <form>
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Mensaje" rows="5" required></textarea>
-                <button class="botonForm" type="submit">Enviar</button>
-            </form>
-
-            <!-- Iconos de redes sociales -->
-            <div class="redes-sociales">
-                <a href="https://instagram.com/tu-usuario" target="_blank" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="mailto:tu-email@example.com" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://wa.me/tu-numero" target="_blank" aria-label="WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+       
+        <section id="contacto" class="contacto">
+            <div class="contacto-info">
+                <h2>Contacto</h2>
+                <form>
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    <button class="botonForm" type="submit">Enviar</button>
+                </form>
+    
+                <!-- Iconos de redes sociales -->
+                <div class="redes-sociales">
+                    <a href="https://instagram.com/tu-usuario" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:tu-email@example.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/tu-numero" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mapa" id="ubicacion">
+                <h2>Ubicación</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.538346356507!2d-58.44275802514596!3d-34.615833558136615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3f8a06b82d%3A0xde3a916bdb968546!2sNeuqu%C3%A9n%20687%2C%20C1405CKC%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1741484169643!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
+        
 
     <!-- Pantalla de créditos -->
     <section id="creditos" class="section">

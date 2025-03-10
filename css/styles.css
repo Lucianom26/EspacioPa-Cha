@@ -8,14 +8,12 @@
 
 
 h1, h2, h3 {
-    color: #333;
-    font-family: "Helvetica", sans-serif; /* Fuente Helvetica */
+    color: #4b2613;
+    font-family: "Nunito", sans-serif; /* Fuente Nunito */
     font-weight: bold; /* Texto en negrita */
-
 }
 p{
-    font-family: "Helvetica", sans-serif; /* Fuente Helvetica */
-
+    font-family: "Nunito", sans-serif; /* Fuente Helvetica */
 }
 a {
     text-decoration: none;
@@ -35,38 +33,92 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 15px;
     z-index: 1000;
-    font-family: "Helvetica", sans-serif; /* Fuente Helvetica */
-    font-weight: bold; /* Texto en negrita */
-    text-transform: uppercase; /* Texto en mayúsculas */
+    font-family: "Nunito", sans-serif; /* Fuente Nunito */
+    font-weight: 500; /* Texto en negrita */
+    font-size: 12px;
 }
+
 .navbar .logo {
-    font-size: 24px;
-    font-family: "Helvetica", sans-serif; /* Fuente Helvetica */
-    font-weight: bold; /* Texto en negrita */
-    text-transform: uppercase; /* Texto en mayúsculas */
+    height: 70px; /* Ajusta la altura según sea necesario */
+    width: auto;  /* Mantiene las proporciones de la imagen */
 }
+
 .navbar .menu {
     display: flex;
+    flex-direction: row; /* Por defecto, el menú es horizontal */
     gap: 15px;
+    margin-right: 20px;
 }
+
 .navbar .menu a {
     padding: 5px 10px;
     margin-right: 30px;
-    transition: background 0.3s;
-}
-.navbar .menu a:hover {
-    background: #beb2b2;
-    border-radius: 5px;
+    position: relative; /* Necesario para el subrayado con border */
+    transition: color 0.4s, border-bottom 0.4s; /* Suaviza tanto el color como el subrayado */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
 }
 
-/* Ícono de hamburguesa */
+.navbar .menu a:hover {
+    color: #4b2613; /* Cambia el color del enlace al hacer hover */
+    border-bottom: 2px solid #4b2613; /* Agrega un subrayado suave */
+}
+
+/* Menú Hamburguesa */
 .navbar .hamburguesa {
     display: none;
     font-size: 24px;
-    margin-right: 50px;
     cursor: pointer;
+    margin-right: 20px;
+}
+
+
+/* Estilos para el submenú */
+.navbar .menu ul {
+    display: flex; /* Muestra el menú horizontalmente */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .menu > ul > li {
+    position: relative; /* Necesario para el submenú */
+}
+
+/* Submenú oculto por defecto */
+.navbar .menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Alinea el submenú debajo del ítem principal */
+    left: 0;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: 200px; /* Ancho del submenú */
+    z-index: 1000;
+}
+
+.navbar .menu > ul > li:hover .submenu {
+    display: block; /* Muestra el submenú al pasar el ratón (solo en pantallas grandes) */
+}
+
+/* Estilos para los elementos dentro del submenú */
+.navbar .menu .submenu li {
+    padding: 10px;
+    text-align: left;
+   
+}
+
+.navbar .menu .submenu li a {
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-transform: initial;
+}
+
+.navbar .menu .submenu li a:hover {
+    background-color: #f7860a; /* Color de fondo al pasar el ratón sobre el enlace */
 }
 
 /* Video a pantalla completa */
@@ -80,7 +132,7 @@ a {
     height: 100%;
     object-fit: cover;
 }
-.fullscreen-video .overlay {
+.fullscreen-video .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -91,61 +143,127 @@ a {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
     padding: 0 20px;
-    font-family: "Helvetica", sans-serif; /* Fuente Helvetica */
-    font-weight: bold; /* Texto en negrita */
+    font-family: "Instrument Serif", sans-serif; /* Fuente Instrument */
+    font-weight: 400; /* Texto en negrita */
+    font-style: normal; 
 }
 
 /* Sección "Quienes somos" */
 #quienes-somos {
     background: #fdf5ee;
-    width: 100%;
-    height: 100px;
+    min-height: 300px; /* Usa min-height para que se ajuste al contenido */
+    padding: 20px; /* Añadir un poco de espacio interno */
+}
+
+/* Estilo para la clase "quienes" */
+.quienes {
+    margin: 10px;
+    text-align: center; /* Centra el texto dentro de la clase .quienes */
+    width: 100%; 
+}
+.quienes p{
+    font-family: "Instrument Serif", sans-serif; /* Fuente Instrument */
+    font-weight: 400; /* Texto en negrita */
+    font-style: normal;
+    font-size: 2em;
+    color: #4b2613;
 }
 
 /* Sección de servicios */
-.servicios-titulo{
-    padding: 5px 10px;
-    text-align: center;
-    background: #190202;
-}
-.servicios-titulo h2{
-color: #fff;
-}
+
 #servicios {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding: 50px;
-    background: #190202;
+    padding: 90px;
+    background: #fdf5ee;    
 }
 .servicio {
-    background: #fdf5ee;
+    background-color: #fdf5ee;
     border: 1px solid #ddd;
-    padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s;
     cursor: pointer;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Necesario para el pseudo-elemento */
+    padding: 20px; /* Añadido para dar espacio dentro del contenedor */
 }
-.servicio:hover {
-    transform: scale(1.05);
+.servicio-img-1{
+    background-image: url("/img/logos.jpg"); /* Imagen de fondo */
+}
+.servicio-img-2{
+    background-image: url("/img/kairos.jpg"); /* Imagen de fondo */
+}
+.servicio-img-3{
+    background-image: url("/img/conversatorio.jpg"); /* Imagen de fondo */
+}
+.servicio-img-4{
+    background-image: url("/img/atelier.jpg"); /* Imagen de fondo */
+}
+.servicio-img-5{
+    background-image: url("/img/comunidad.jpeg"); /* Imagen de fondo */
+}
+.servicio h3{
+    font-family: "Instrument Serif", sans-serif; /* Fuente Instrument */
+    font-weight: bold; /* Texto en negrita */
+    font-style: normal;
+    font-size: 30px;
+    color:#4b2613;
+    padding: 60px;
+    text-align: center;
 }
 
+.servicio:hover {
+    transform: scale(1.05);
+    background-color: #f7860a;
+    background-image: none;
+}
+.servicio h3:hover {
+    color: #fff;
+}
+.servicio:hover::after {
+    content: "Conocé más";
+    position: absolute;
+    top: 50%;  /* Ajustamos para que esté debajo del h3 */
+    left: 50%;
+    transform: translate(-50%, 50%);  /* Centrado horizontal y ajustado verticalmente */
+    border-bottom: 2px solid #4b2613; /* Agrega un subrayado suave */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    font-family: "Nunito", sans-serif; /* Fuente Instrument */
+    font-style: normal;
+}
+.servicio::after {
+    content: "";
+    opacity: 0; /* El pseudo-elemento está oculto por defecto */
+    transition: opacity 0.3s;
+}
 /* Pantalla de cada servicio */
+/* Detalles de servicios ocultos por defecto */
 .servicio-detalle {
     display: none;
-    padding: 50px 20px;
+    padding: 20px;
     background-color: #fdf5ee;
 }
+
+/* Detalles de servicios visibles cuando tienen la clase 'active' */
 .servicio-detalle.active {
     display: block;
 }
-
-/* Formulario de contacto */
+/* Formulario de Contacto */
 #contacto{
-    background: #fdf5ee;
+    background-color: #fdf5ee;  
 }
 #contacto form {
     max-width: 400px;
@@ -153,12 +271,16 @@ color: #fff;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: #fdf5ee; 
 }
+
 #contacto input, #contacto textarea {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-family: "Nunito", sans-serif;
 }
+
 #contacto button {
     padding: 10px;
     background: #190202;
@@ -166,10 +288,11 @@ color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: background-color 0.3s;
 }
-#contacto .botonForm:hover{
-   background-color: #4CAF50;
+
+#contacto button:hover {
+    background-color: #f7860a;
 }
 /* Iconos de redes sociales */
 .redes-sociales {
@@ -184,8 +307,41 @@ color: #fff;
     transition: color 0.3s;
 }
 .redes-sociales a:hover {
-    color: #4CAF50; /* Cambia el color al pasar el mouse */
+    color: #f7860a; /* Cambia el color al pasar el mouse */
 }
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contacto-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #fdf5ee;
+    border-radius: 8px;
+}
+
+.mapa {
+    flex: 1;
+    padding: 20px;
+    background-color: #fdf5ee;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
 /* Pantalla de créditos */
 #creditos {
     background: #190202;
@@ -196,7 +352,7 @@ color: #fff;
     color: white;
 }
 .terminos:hover{
-    color: #4CAF50;
+    color: #f7860a;
 }
 
 /* Estilos para la imagen */
@@ -210,43 +366,153 @@ color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.floating-button-container{
+/* Botón Flotante de WhatsApp */
+.floating-button-container {
     position: fixed;
     bottom: 20px;
-    right:20px;
-    background-image: transparent;
-    background-color: transparent;
-    border: transparent;
-    }
-.floating-button{
-    background-image: transparent;
-    background-color: transparent;
-    border-color: transparent;
-    cursor: pointer;
-    }
+    right: 20px;
+    z-index: 1000;
+}
 
+.floating-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.floating-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 /* Media Queries para Responsive Design */
-@media (max-width: 768px) {
-    /* Barra superior */
-    .navbar .menu {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
-        width: 100%;
-    }
-    .navbar .menu.active {
-        display: flex;
-    }
+
+/* Media query para pantallas pequeñas (menos de 768px) */
+@media only screen and (max-width: 768px) {
+    /* Mostrar el ícono de hamburguesa */
     .navbar .hamburguesa {
         display: block;
+        font-size: 30px; /* Tamaño de ícono más grande para móviles */
+        margin-left: 15px;
     }
-    #close-menu {
-        display: none;
-        cursor: pointer;
+
+    .navbar .menu {
+        display: none; /* Oculta el menú por defecto en móviles/tablets */
+        flex-direction: column; /* Muestra los elementos en columna */
+        position: fixed; /* Posición fija */
+        top: 0;
+        left: -250px; /* Oculta el menú fuera de la pantalla */
+        width: 250px; /* Ancho del menú */
+        height: 100vh; /* Altura completa de la pantalla */
+        background: rgba(255, 255, 255, 0.95); /* Fondo del menú */
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para el menú */
+        z-index: 1000; /* Asegura que esté por encima de otros elementos */
+        transition: left 0.3s ease; /* Transición suave */
+        padding-top: 60px; /* Espacio para el logo y el botón de hamburguesa */
+    }
+
+    /* Muestra el menú cuando está activo */
+    .navbar .menu.active {
+        left: 0; /* Muestra el menú desde la izquierda */
+        display: flex; /* Muestra el menú */
+    }
+
+    /* Estilos para los elementos del menú */
+    .navbar .menu ul {
+        flex-direction: column; /* Muestra los elementos en columna */
+        padding: 20px; /* Espaciado interno */
+    }
+
+    .navbar .menu ul li {
+        margin: 10px 0; /* Espaciado entre elementos */
+    }
+
+    /* Estilos para el botón de hamburguesa */
+    .navbar .hamburguesa {
+        display: block; /* Muestra el botón de hamburguesa */
         font-size: 24px;
-        margin-left: 50px;
-      }
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    /* Estilos para el ícono de cerrar */
+    #close-menu {
+        display: none; /* Oculta el ícono de cerrar por defecto */
+        font-size: 24px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .navbar .menu .submenu {
+        position: static; /* El submenú se muestra en columna */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        box-shadow: none; /* Sin sombra */
+        background-color: transparent; /* Fondo transparente */
+        padding: 0; /* Sin espaciado interno */
+    }
+
+    .navbar .menu .submenu li {
+        padding: 5px 20px; /* Espaciado interno */
+    }
+
+    .navbar .menu .submenu li a {
+        color: #333;
+    }
+
+    .navbar .menu .submenu li a:hover {
+        background-color: #f7860a; /* Sin fondo al hacer hover */
+    }  
+
+
+    /* Modificación en la apariencia del menú hamburguesa para cuando está abierto */
+    .navbar .hamburguesa i {
+        color: #4b2613; /* Cambia el color del ícono hamburguesa */
+    }
+    .servicio {
+        width: 200px; /* Hacemos que los contenedores sean más pequeños */
+        height: 200px;
+        margin: 10px;
+        
+    }
+
+    /* Para pantallas pequeñas, los contenedores se muestran en fila */
+    .servicio {
+        display: block;
+        margin: 10px auto; /* Centra los contenedores en la pantalla */
+    }
+
+    /* Ajustamos el tamaño del texto dentro de los contenedores */
+    .servicio h3 {
+        font-size: 14px;
+    }
+
+    .servicio:hover::after {
+        font-size: 14px; /* Ajuste de tamaño para el texto "Conocer más" */
+    }
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto-info,
+    .mapa {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+   
+}
+
+/* Media query para pantallas muy pequeñas (menos de 480px) */
+@media screen and (max-width: 480px) {
+    /* Barra superior */
+    .navbar .logo {
+        font-size: 20px; /* Ajusta el tamaño del logo */
+    }
+
     /* Video a pantalla completa */
     .fullscreen-video .overlay {
         font-size: 1.5em;
@@ -254,28 +520,25 @@ color: #fff;
 
     /* Sección de servicios */
     #servicios {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: 1fr; /* Asegura que los servicios se muestren en una sola columna */
     }
+    .servicio {
+        width: 150px; /* Más pequeño en pantallas muy pequeñas */
+        height: 150px;
+    }
+
+    .servicio h3 {
+        font-size: 12px; /* Reducimos el tamaño del título */
+    }
+
+    .servicio:hover::after {
+        font-size: 12px; /* Reducimos el tamaño del texto "Conocer más" */
+    }
+
 
     /* Formulario de contacto */
     #contacto form {
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Barra superior */
-    .navbar .logo {
-        font-size: 20px;
+        padding: 0 10px; /* Ajusta el padding en el formulario */
     }
 
-    /* Video a pantalla completa */
-    .fullscreen-video .overlay {
-        font-size: 1.2em;
-    }
-
-    /* Sección de servicios */
-    #servicios {
-        grid-template-columns: 1fr;
-    }
 }

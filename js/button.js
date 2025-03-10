@@ -1,5 +1,6 @@
 function openWhatsApp() {
-    var phoneNumber = "1162661506"; // Replace with your WhatsApp phone number
-    var whatsAppUrl = "https://wa.me/" + phoneNumber;
-    window.open(whatsAppUrl, "_blank");
+    const phoneNumber = "1162661506"; // Reemplaza con tu número
+    const message = "Hola, me gustaría obtener más información."; // Mensaje predeterminado
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
 }
