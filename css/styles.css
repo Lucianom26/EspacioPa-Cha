@@ -215,8 +215,9 @@ a {
     font-style: normal;
     font-size: 30px;
     color:#4b2613;
-    padding: 60px;
+    margin: 0 auto;
     text-align: center;
+    padding-top: 50px;
 }
 
 .servicio:hover {
@@ -471,23 +472,19 @@ iframe {
     .servicio {
         width: 200px; /* Hacemos que los contenedores sean más pequeños */
         height: 200px;
-        margin: 10px;
-        
-    }
-
-    /* Para pantallas pequeñas, los contenedores se muestran en fila */
-    .servicio {
-        display: block;
-        margin: 10px auto; /* Centra los contenedores en la pantalla */
+        display: block;/* Para pantallas pequeñas, los contenedores se muestran en fila */
+        margin: 0 auto; /* Centra los contenedores en la pantalla */
     }
 
     /* Ajustamos el tamaño del texto dentro de los contenedores */
     .servicio h3 {
         font-size: 14px;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .servicio:hover::after {
-        font-size: 14px; /* Ajuste de tamaño para el texto "Conocer más" */
+        font-size: 12px; /* Ajuste de tamaño para el texto "Conocer más" */
     }
     .contacto {
         flex-direction: column;
@@ -525,10 +522,13 @@ iframe {
     .servicio {
         width: 150px; /* Más pequeño en pantallas muy pequeñas */
         height: 150px;
+        margin: 0 auto;
     }
 
     .servicio h3 {
         font-size: 12px; /* Reducimos el tamaño del título */
+          margin: 0 auto;
+          text-align: center;
     }
 
     .servicio:hover::after {
