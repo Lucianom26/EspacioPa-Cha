@@ -179,7 +179,7 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 90px;
-    background: #fdf5ee;    
+    background: #ffffff;    
 }
 .servicio {
     background-color: #fdf5ee;
@@ -236,7 +236,7 @@ a {
     transform: translate(-50%, 50%);  /* Centrado horizontal y ajustado verticalmente */
     border-bottom: 2px solid #4b2613; /* Agrega un subrayado suave */
     color: #fff;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border-radius: 5px;
     font-weight: bold;
     font-size: 14px;
@@ -257,7 +257,8 @@ a {
 .servicio-detalle {
     display: none;
     padding: 20px;
-    background-color: #fdf5ee;
+    background-color: #ffffff;
+    
 }
 
 .servicio-detalle.active {
@@ -312,8 +313,8 @@ h2 {
 }
 
 .seccion-imagen {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 8px;
     margin-right: 20px;
@@ -506,7 +507,7 @@ iframe {
         background: rgba(255, 255, 255, 0.95); /* Fondo del menú */
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para el menú */
         z-index: 1000; /* Asegura que esté por encima de otros elementos */
-        transition: left 0.3s ease; /* Transición suave */
+        transition: left 0.5s ease; /* Transición suave */
         padding-top: 60px; /* Espacio para el logo y el botón de hamburguesa */
     }
 
@@ -575,7 +576,7 @@ iframe {
 
     /* Ajustamos el tamaño del texto dentro de los contenedores */
     .servicio h3 {
-        font-size: 24px;
+        font-size: 2px;
         margin: 0 auto;
         text-align: center;
     }
