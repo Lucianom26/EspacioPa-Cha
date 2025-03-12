@@ -92,10 +92,8 @@
             <p><i>Un caleidoscopio vital * en la dinámica evolutiva de Eros</i>.</p>  
         </div>  
     </section>
+
  <!-- Sección de servicios -->
- <div class="servicios-titulo">
-    
- </div>
     <section id="servicios" class="section">
         <div class="servicio servicio-img-1" onclick="mostrarServicio('Pacha-logos')">
             <h3>Pacha<br>Logos</h3>
@@ -121,45 +119,86 @@
     <!-- Pantalla de cada servicio -->
     <section id="Pacha-logos" class="servicio-detalle">
         <h2>Pacha Logos</h2>
-        <p>Escritos</p>
-        <p>Reflexiones</p>
-        <p>Ideas</p>
+    
+        <!-- Navegación de ítems -->
+        <div class="navegacion">
+            <a href="javascript:void(0)" onclick="mostrarItem('escritos')">Escritos</a>
+            <a href="javascript:void(0)" onclick="mostrarItem('reflexiones')">Reflexiones</a>
+            <a href="javascript:void(0)" onclick="mostrarItem('ideas')">Ideas</a>
+        </div>
+    
+        <!-- Contenido de cada ítem -->
+        <div id="escritos" class="seccion-item">
+            <img src="./img/escrito.jpg" alt="Escritos" class="seccion-imagen">
+            <div class="descripcion">
+                <h3>Escritos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minima ex molestiae architecto totam magnam. Molestias aliquid, maxime ipsa harum laboriosam libero pariatur ipsam vero aut quidem, quod assumenda nesciunt..</p>
+                <a href="#">Ver más</a>
+            </div>
+        </div>
+    
+        <div id="reflexiones" class="seccion-item" style="display: none;">
+            <img src="./img/reflexion.jpg" alt="Reflexiones" class="seccion-imagen">
+            <div class="descripcion">
+                <h3>Reflexiones</h3>
+                <p>Descripción breve sobre las reflexiones.</p>
+                <a href="#">Ver más</a>
+            </div>
+        </div>
+    
+        <div id="ideas" class="seccion-item" style="display: none;">
+            <img src="./img/idea.jpg" alt="Ideas" class="seccion-imagen">
+            <div class="descripcion">
+                <h3>Ideas</h3>
+                <p>Descripción breve sobre las ideas.</p>
+                <a href="#">Ver más</a>
+            </div>
+        </div>
+    
         <a href="#inicio">Volver a servicios</a>
     </section>
+    
     <section id="Kairos-pacha" class="servicio-detalle">
         <h2>Kairós Pacha</h2>
-        <p>Asistidos</p>
-        <p>Parejas</p>
-        <p>Talleres</p>
+    
+        <!-- Navegación de ítems -->
+        <div class="navegacion">
+            <a href="javascript:void(0)" onclick="mostrarItem('asistidos')">Asistidos</a>
+            <a href="javascript:void(0)" onclick="mostrarItem('parejas')">Parejas</a>
+            <a href="javascript:void(0)" onclick="mostrarItem('talleres')">Talleres</a>
+        </div>
+    
+        <!-- Contenido de cada ítem -->
+        <div id="asistidos" class="seccion-item">
+            <img src="ruta-de-imagen-asistidos.jpg" alt="Asistidos" class="seccion-imagen">
+            <div class="descripcion">
+                <h3>Asistidos</h3>
+                <p>Descripción breve sobre los asistidos.</p>
+                <a href="#">Ver más</a>
+            </div>
+        </div>
+    
+        <div id="parejas" class="seccion-item" style="display: none;">
+            <img src="ruta-de-imagen-parejas.jpg" alt="Parejas" class="seccion-imagen">
+            <div class="descripcion">
+                <h3>Parejas</h3>
+                <p>Descripción breve sobre las parejas.</p>
+                <a href="#">Ver más</a>
+            </div>
+        </div>
+    
+        <div id="talleres" class="seccion-item" style="display: none;">
+            <img src="ruta-de-imagen-talleres.jpg" alt="Talleres" class="seccion-imagen">
+            <div class="descripcion">
+                <h3>Talleres</h3>
+                <p>Descripción breve sobre los talleres.</p>
+                <a href="#">Ver más</a>
+            </div>
+        </div>
+    
         <a href="#servicios">Volver a servicios</a>
     </section>
-    <section id="conversatorio" class="servicio-detalle">
-        <h2>Conversatorio</h2>
-        <p>Tus preguntas</p>
-        <p>Tus ideas</p>
-        <p>Nuestro Compar</p>
-        <a href="#servicios">Volver a servicios</a>
-    </section>
-    <section id="atelier" class="servicio-detalle">
-        <h2>Atelier</h2>
-        <p>Galería</p>
-        <p>Música</p>
-        <p>Diseño</p>
-        <p>Poesía</p>
-        <p>Escritos</p>
-        <a href="#servicios">Volver a servicios</a>
-    </section>
-    <section id="comunidad-pacha" class="servicio-detalle">
-        <h2>Comunidad Pacha</h2>
-        <p>Quienes Somos</p>
-        <p>Sumate</p>
-        <a href="#servicios">Volver a servicios</a>
-    </section>
-    <section id="acompañamientos" class="servicio-detalle">
-        <h2>Acompañamientos</h2>
-        <p>Información detallada sobre los acompañamientos.</p>
-        <a href="#servicios">Volver a servicios</a>
-    </section>
+    <!-- Repite lo mismo para las demás secciones -->
         <!-- Formulario de contacto -->
        
         <section id="contacto" class="contacto">
