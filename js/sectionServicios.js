@@ -13,6 +13,21 @@ function mostrarServicio(id) {
         console.error(`No se encontró el servicio con ID: ${id}`);
     }
 }
+// Función para mostrar el ítem correspondiente
+function mostrarItem(itemId) {
+    // Primero, ocultamos todos los ítems
+    const items = document.querySelectorAll('.seccion-item');
+    items.forEach(function(item) {
+        item.style.display = 'none';
+    });
+
+    // Luego, mostramos el ítem seleccionado
+    const itemSeleccionado = document.getElementById(itemId);
+    if (itemSeleccionado) {
+        itemSeleccionado.style.display = 'flex';
+    }
+}
+
 /*document.addEventListener('click', (event) => {
     const servicios = document.querySelectorAll('.servicio-detalle');
     const clicDentroDeServicio = Array.from(servicios).some(servicio => servicio.contains(event.target));
