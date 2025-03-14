@@ -33,7 +33,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 10px;
     z-index: 1000;
     font-family: "Nunito", sans-serif; /* Fuente Nunito */
     font-weight: 500; /* Texto en negrita */
@@ -154,7 +154,7 @@ a {
 /* Sección "Quienes somos" */
 #quienes-somos {
     background: #fdf5ee;
-    min-height: 300px; /* Usa min-height para que se ajuste al contenido */
+    min-height: 400px; /* Usa min-height para que se ajuste al contenido */
     padding: 20px; /* Añadir un poco de espacio interno */
 }
 
@@ -307,10 +307,10 @@ h2 {
     transition: transform 0.3s ease;
 }
 
-.seccion-item:hover {
+/*.seccion-item:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 .seccion-imagen {
     width: 200px;

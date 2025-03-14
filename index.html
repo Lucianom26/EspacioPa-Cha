@@ -22,7 +22,7 @@
     <div class="menu">
         <ul>
             <li>
-                <a href="">PACHA LOGOS</a>
+                <a>PACHA LOGOS</a>
                 <ul class="submenu">
                     <li><a href="#escritos">Escritos</a></li>
                     <li><a href="#reflexiones">Reflexiones</a></li>
@@ -30,7 +30,7 @@
                 </ul>
             </li>
             <li>
-                <a href="">KAIRÓS PACHA</a>
+                <a>KAIRÓS PACHA</a>
                 <ul class="submenu">
                     <li><a href="#asistidos">Asistidos</a></li>
                     <li><a href="#parejas">Parejas</a></li>
@@ -38,7 +38,7 @@
                 </ul>
             </li>
             <li>
-                <a href="">CONVERSATORIO</a>
+                <a>CONVERSATORIO</a>
                 <ul class="submenu">
                     <li><a href="#preguntas">Tus Preguntas</a></li>
                     <li><a href="#ideas">Tus Ideas</a></li>
@@ -46,24 +46,23 @@
                 </ul>
             </li>
             <li>
-                <a href="">ATELIER</a>
+                <a>ATELIER</a>
                 <ul class="submenu">
                     <li><a href="#galeria">Galeria</a></li>
                     <li><a href="#musica">Música</a></li>
                     <li><a href="#diseño">Diseño</a></li>
                     <li><a href="#poesia">Poesía</a></li>
-                    <li><a href="#escrito">Escritos</a></li>
                 </ul>
             </li>
             <li>
-                <a href="">COMUNIDAD PACHA</a>
+                <a>COMUNIDAD PACHA</a>
                 <ul class="submenu">
                     <li><a href="#eventos">Quienes Somos</a></li>
                     <li><a href="#sumate">Sumate</a></li>
                 </ul>
             </li>
             <li>
-                <a href="">CONTACTO</a>
+                <a>CONTACTO</a>
                 <ul class="submenu">
                     <li><a href="#ubicacion">Ubicación</a></li>
                     <li><a href="#contacto">Formulario</a></li>
@@ -199,38 +198,197 @@
         <a href="#servicios">Volver a servicios</a>
     </section>
     <!-- Repite lo mismo para las demás secciones -->
-        <!-- Formulario de contacto -->
-       
-        <section id="contacto" class="contacto">
-            <div class="contacto-info">
-                <h2>Contacto</h2>
-                <form>
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Mensaje" rows="5" required></textarea>
-                    <button class="botonForm" type="submit">Enviar</button>
-                </form>
     
-                <!-- Iconos de redes sociales -->
-                <div class="redes-sociales">
-                    <a href="https://instagram.com/tu-usuario" target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="mailto:tu-email@example.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://wa.me/tu-numero" target="_blank" aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
+        <section id="conversatorio" class="servicio-detalle">
+            <h2>Conversatorio</h2>
+        
+            <!-- Navegación de ítems -->
+            <div class="navegacion">
+                <a href="javascript:void(0)" onclick="mostrarItem('preguntas')">Tus Preguntas</a>
+                <a href="javascript:void(0)" onclick="mostrarItem('idea')">Tus Ideas</a>
+                <a href="javascript:void(0)" onclick="mostrarItem('compar')">Nuestro Compar</a>
+            </div>
+        
+            <!-- Contenido de cada ítem -->
+            <div id="preguntas" class="seccion-item">
+                <img src="./img/escrito.jpg" alt="Preguntas" class="seccion-imagen">
+                <div class="descripcion">
+                    <h3>Tus Preguntas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minima ex molestiae architecto totam magnam. Molestias aliquid, maxime ipsa harum laboriosam libero pariatur ipsam vero aut quidem, quod assumenda nesciunt..</p>
+                    <a href="#">Ver más</a>
                 </div>
             </div>
-            <div class="mapa" id="ubicacion">
-                <h2>Ubicación</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.538346356507!2d-58.44275802514596!3d-34.615833558136615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3f8a06b82d%3A0xde3a916bdb968546!2sNeuqu%C3%A9n%20687%2C%20C1405CKC%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1741484169643!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+            <div id="idea" class="seccion-item" style="display: none;">
+                <img src="./img/reflexion.jpg" alt="Ideas" class="seccion-imagen">
+                <div class="descripcion">
+                    <h3>Tus Ideas</h3>
+                    <p>Descripción breve sobre las reflexiones.</p>
+                    <a href="#">Ver más</a>
+                </div>
             </div>
+        
+            <div id="compar" class="seccion-item" style="display: none;">
+                <img src="./img/idea.jpg" alt="Compar" class="seccion-imagen">
+                <div class="descripcion">
+                    <h3>Nuestro Compar</h3>
+                    <p>Descripción breve sobre las ideas.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        
+            <a href="#inicio">Volver a servicios</a>
+        </section>
+        <section id="atelier" class="servicio-detalle">
+            <h2>Atelier</h2>
+        
+            <!-- Navegación de ítems -->
+            <div class="navegacion">
+                <a href="javascript:void(0)" onclick="mostrarItem('galeria')">Galeria</a>
+                <a href="javascript:void(0)" onclick="mostrarItem('musica')">Música</a>
+                <a href="javascript:void(0)" onclick="mostrarItem('diseño')">Diseño</a>
+                <a href="javascript:void(0)" onclick="mostrarItem('poesia')">Poesía</a>
+            </div>
+        
+            <!-- Contenido de cada ítem -->
+            <div id="galeria" class="seccion-item">
+                <img src="./img/escrito.jpg" alt="Galeria" class="seccion-imagen">
+                <div class="descripcion">
+                    <h3>Galería</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minima ex molestiae architecto totam magnam. Molestias aliquid, maxime ipsa harum laboriosam libero pariatur ipsam vero aut quidem, quod assumenda nesciunt..</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        
+            <div id="musica" class="seccion-item" style="display: none;">
+                <img src="./img/reflexion.jpg" alt="Musica" class="seccion-imagen">
+                <div class="descripcion">
+                    <h3>Música</h3>
+                    <p>Descripción breve sobre las reflexiones.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        
+            <div id="diseño" class="seccion-item" style="display: none;">
+                <img src="./img/idea.jpg" alt="Diseño" class="seccion-imagen">
+                <div class="descripcion">
+                    <h3>Diseño</h3>
+                    <p>Descripción breve sobre las ideas.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <div id="poesia" class="seccion-item" style="display: none;">
+                <img src="./img/idea.jpg" alt="Poesia" class="seccion-imagen">
+                <div class="descripcion">
+                    <h3>Poesía</h3>
+                    <p>Descripción breve sobre las ideas.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <a href="#inicio">Volver a servicios</a>
+        </section>
+
+        <section id="comunidad-pacha" class="servicio-detalle">
+            <h2>Comunidad Pacha</h2>
+        
+            <!-- Navegación de ítems -->
+            <div class="navegacion">
+                <a href="javascript:void(0)" onclick="mostrarItem('somos')">Quienes Somos</a>
+                <a href="javascript:void(0)" onclick="mostrarItem('sumate')">Sumate</a>
+            </div>
+        
+            <!-- Contenido de cada ítem -->
+            <div id="somos" class="seccion-item">
+                <img src="./img/escrito.jpg" alt="Somos" class="seccion-imagen">
+                <div class="descripcion">
+                    <h3>Escritos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minima ex molestiae architecto totam magnam. Molestias aliquid, maxime ipsa harum laboriosam libero pariatur ipsam vero aut quidem, quod assumenda nesciunt..</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        
+            <div id="sumate" class="seccion-item" style="display: none;">
+                <img src="./img/reflexion.jpg" alt="Sumate" class="seccion-imagen">
+                <div class="descripcion">
+                    <h3>Sumate</h3>
+                    <p>Descripción breve sobre las reflexiones.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        
+            <a href="#inicio">Volver a servicios</a>
         </section>
         
+        <section id="acompañamientos" class="servicio-detalle">
+            <h2>Acompañamientos</h2>
+        
+            <!-- Navegación de ítems -->
+            <div class="navegacion">
+                <a href="javascript:void(0)" onclick="mostrarItem('escritos')">Escritos</a>
+                <a href="javascript:void(0)" onclick="mostrarItem('reflexiones')">Reflexiones</a>
+                <a href="javascript:void(0)" onclick="mostrarItem('ideas')">Ideas</a>
+            </div>
+        
+            <!-- Contenido de cada ítem -->
+            <div id="escritos" class="seccion-item">
+                <img src="./img/escrito.jpg" alt="Escritos" class="seccion-imagen">
+                <div class="descripcion">
+                    <h3>Escritos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minima ex molestiae architecto totam magnam. Molestias aliquid, maxime ipsa harum laboriosam libero pariatur ipsam vero aut quidem, quod assumenda nesciunt..</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        
+            <div id="reflexiones" class="seccion-item" style="display: none;">
+                <img src="./img/reflexion.jpg" alt="Reflexiones" class="seccion-imagen">
+                <div class="descripcion">
+                    <h3>Reflexiones</h3>
+                    <p>Descripción breve sobre las reflexiones.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        
+            <div id="ideas" class="seccion-item" style="display: none;">
+                <img src="./img/idea.jpg" alt="Ideas" class="seccion-imagen">
+                <div class="descripcion">
+                    <h3>Ideas</h3>
+                    <p>Descripción breve sobre las ideas.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        
+            <a href="#inicio">Volver a servicios</a>
+        </section>
+    <!-- Formulario de contacto -->
+       
+    <section id="contacto" class="contacto">
+        <div class="contacto-info">
+            <h2>Contacto</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensaje" rows="5" required></textarea>
+                <button class="botonForm" type="submit">Enviar</button>
+            </form>
 
+            <!-- Iconos de redes sociales -->
+            <div class="redes-sociales">
+                <a href="https://instagram.com/tu-usuario" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:tu-email@example.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/tu-numero" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <div class="mapa" id="ubicacion">
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.538346356507!2d-58.44275802514596!3d-34.615833558136615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3f8a06b82d%3A0xde3a916bdb968546!2sNeuqu%C3%A9n%20687%2C%20C1405CKC%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1741484169643!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
     <!-- Pantalla de créditos -->
     <section id="creditos" class="section">
         <p>© 2025 Espacio PACHA. Todos los derechos reservados.</p>
