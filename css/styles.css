@@ -29,11 +29,11 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.7);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
+    padding: 3px 3px;
     z-index: 1000;
     font-family: "Nunito", sans-serif; /* Fuente Nunito */
     font-weight: 500; /* Texto en negrita */
@@ -41,14 +41,15 @@ a {
 }
 
 .navbar .logo {
-    height: 50px; /* Ajusta la altura según sea necesario */
+    height: 2rem; /* Ajusta la altura según sea necesario */
     width: auto;  /* Mantiene las proporciones de la imagen */
+    margin-left: .5rem;
 }
 
 .navbar .menu {
     display: flex;
     flex-direction: row; /* Por defecto, el menú es horizontal */
-    gap: 15px;
+    gap: 10px;
     margin-right: 20px;
 }
 
@@ -84,6 +85,7 @@ a {
 
 .navbar .menu > ul > li {
     position: relative; /* Necesario para el submenú */
+    margin: 1rem;
 }
 
 /* Submenú oculto por defecto */
@@ -107,7 +109,7 @@ a {
 .navbar .menu .submenu li {
     padding: 10px;
     text-align: left;
-   
+     margin-top: 1rem;
 }
 
 .navbar .menu .submenu li a {
@@ -143,33 +145,39 @@ a {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 3em;
+    font-size: 2rem;
     text-align: center;
     padding: 0 20px;
-    font-family: "Instrument Serif", sans-serif; /* Fuente Instrument */
-    font-weight: 400; /* Texto en negrita */
-    font-style: normal; 
+    /*font-family: "Instrument Serif", sans-serif; /* Fuente Instrument */
+    /*font-weight: 400; /* Texto en negrita */
+    /*font-style: normal; 
+    line-height: 1; /*interlineado*/
 }
+ .overlay img {
+        width: auto;
+        height: 8rem;
+        }
 
 /* Sección "Quienes somos" */
 #quienes-somos {
-    background: #fdf5ee;
+    background: #ffffff;
     min-height: 400px; /* Usa min-height para que se ajuste al contenido */
-    padding: 20px; /* Añadir un poco de espacio interno */
+    padding: 15px; /* Añadir un poco de espacio interno */
 }
-
 /* Estilo para la clase "quienes" */
 .quienes {
-    margin: 10px;
-    text-align: center; /* Centra el texto dentro de la clase .quienes */
+    margin: 5px;
+    text-align: left; /* Centra el texto dentro de la clase .quienes */
     width: 100%; 
+    
 }
 .quienes p{
     font-family: "Instrument Serif", sans-serif; /* Fuente Instrument */
     font-weight: 400; /* Texto en negrita */
     font-style: normal;
-    font-size: 2em;
+    font-size: 3.8rem;
     color: #4b2613;
+    line-height: 1; /*interlineado*/
 }
 
 /* Sección de servicios */
@@ -182,7 +190,7 @@ a {
     background: #ffffff;    
 }
 .servicio {
-    background-color: #fdf5ee;
+    background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 10px;
     transition: transform 0.3s;
@@ -195,19 +203,19 @@ a {
     padding: 20px; /* Añadido para dar espacio dentro del contenedor */
 }
 .servicio-img-1{
-    background-image: url("/img/logos.jpg"); /* Imagen de fondo */
+    background-image: url("../img/logos.jpg"); /* Imagen de fondo */
 }
 .servicio-img-2{
-    background-image: url("/img/kairos.jpg"); /* Imagen de fondo */
+    background-image: url("../img/kairos.jpg"); /* Imagen de fondo */
 }
 .servicio-img-3{
-    background-image: url("/img/conversatorio.jpg"); /* Imagen de fondo */
+    background-image: url("../img/conversatorio.jpg"); /* Imagen de fondo */
 }
 .servicio-img-4{
-    background-image: url("/img/atelier.jpg"); /* Imagen de fondo */
+    background-image: url("../img/atelier.jpg"); /* Imagen de fondo */
 }
 .servicio-img-5{
-    background-image: url("/img/comunidad.jpeg"); /* Imagen de fondo */
+    background-image: url("../img/comunidad.jpeg"); /* Imagen de fondo */
 }
 .servicio h3{
     font-family: "Instrument Serif", sans-serif; /* Fuente Instrument */
@@ -217,7 +225,6 @@ a {
     color:#4b2613;
     margin: 0 auto;
     text-align: center;
-    padding-top: 50px;
 }
 
 .servicio:hover {
@@ -236,7 +243,7 @@ a {
     transform: translate(-50%, 50%);  /* Centrado horizontal y ajustado verticalmente */
     border-bottom: 2px solid #4b2613; /* Agrega un subrayado suave */
     color: #fff;
-    padding: 10px 10px;
+    padding: 5px 7px;
     border-radius: 5px;
     font-weight: 100;
     font-size: 14px;
@@ -366,7 +373,7 @@ a {
 }
 /* Formulario de Contacto */
 #contacto{
-    background-color: #fdf5ee;  
+    background-color: #ffffff;  
 }
 #contacto form {
     max-width: 400px;
@@ -374,7 +381,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: #fdf5ee; 
+    background-color: #ffffff; 
 }
 
 #contacto input, #contacto textarea {
@@ -422,14 +429,14 @@ a {
 .contacto-info {
     flex: 1;
     padding: 20px;
-    background-color: #fdf5ee;
+    background-color: #ffffff;
     border-radius: 8px;
 }
 
 .mapa {
     flex: 1;
     padding: 20px;
-    background-color: #fdf5ee;
+    background-color: #ffffff;
     border-radius: 8px;
 }
 
@@ -447,28 +454,27 @@ iframe {
 
 /* Pantalla de créditos */
 #creditos {
-    background: #190202;
-    color: white;
-    padding: 20px;
+    background: #fdf5ee;
+    color:#4b2613;
+    padding: 10px;
 }
-#creditos h2{
-    color: white;
-}
+
+
 .terminos:hover{
     color: #f7860a;
+    border-bottom: #4b2613;
 }
 
 /* Estilos para la imagen */
 .imagen-container {
     margin: 20px 0;
     text-align: center;
+    font-family: "Nunito", sans-serif; 
 }
-.imagen-container img {
-    max-width: 100%;
-    height: 70px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.imagen-container:hover{
+    color: #f7860a;
 }
+
 /* Botón Flotante de WhatsApp */
 .floating-button-container {
     position: fixed;
