@@ -225,6 +225,7 @@ a {
     color:#4b2613;
     margin: 0 auto;
     text-align: center;
+    padding: 50px 50px;
 }
 
 .servicio:hover {
@@ -238,15 +239,15 @@ a {
 .servicio:hover::after {
     content: "Conocé más";
     position: absolute;
-    top: 50%;  /* Ajustamos para que esté debajo del h3 */
-    left: 50%;
-    transform: translate(-50%, 50%);  /* Centrado horizontal y ajustado verticalmente */
+    top: 55%;  /* Ajustamos para que esté debajo del h3 */
+    left: 55%;
+    transform: translate(-60%, 60%);  /* Centrado horizontal y ajustado verticalmente */
     border-bottom: 2px solid #4b2613; /* Agrega un subrayado suave */
     color: #fff;
-    padding: 5px 7px;
+    padding: 5px 3px;
     border-radius: 5px;
     font-weight: 100;
-    font-size: 14px;
+    font-size: 12px;
     opacity: 1;
     transition: opacity 0.3s;
     font-family: "Nunito", sans-serif; /* Fuente Instrument */
