@@ -602,6 +602,7 @@ iframe {
     .servicio {
         width: 200px; /* Ocupa el 100% del ancho del contenedor */
         height: 200px; /* Deja que la altura sea flexible */
+        margin: 0 auto;
     }
 
     .servicio h3 {
@@ -814,8 +815,8 @@ iframe {
     }
 
     .servicio {
-        width: 300px; /* Ocupa el 100% del ancho del contenedor */
-        height: 300px; /* Deja que la altura sea flexible */
+        width: 200px; /* Ocupa el 100% del ancho del contenedor */
+        height: 200px; /* Deja que la altura sea flexible */
         margin: 0 auto;
     }
 
@@ -873,3 +874,4 @@ iframe {
         font-size: 1.8rem;
     }
 } 
+}
