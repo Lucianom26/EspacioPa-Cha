@@ -187,8 +187,9 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 90px;
-    background: #ffffff;    
+    background: #ffffff;
 }
+
 .servicio {
     background-color: #ffffff;
     border: 1px solid #ddd;
@@ -201,31 +202,41 @@ a {
     background-position: center;
     position: relative; /* Necesario para el pseudo-elemento */
     padding: 20px; /* Añadido para dar espacio dentro del contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.servicio-img-1{
-    background-image: url("../img/logos.jpg"); /* Imagen de fondo */
+
+.servicio-img-1 {
+    background-image: url("../img/logos.jpg");
 }
-.servicio-img-2{
-    background-image: url("../img/kairos.jpg"); /* Imagen de fondo */
+
+.servicio-img-2 {
+    background-image: url("../img/kairos.jpg");
 }
-.servicio-img-3{
-    background-image: url("../img/conversatorio.jpg"); /* Imagen de fondo */
+
+.servicio-img-3 {
+    background-image: url("../img/conversatorio.jpg");
 }
-.servicio-img-4{
-    background-image: url("../img/atelier.jpg"); /* Imagen de fondo */
+
+.servicio-img-4 {
+    background-image: url("../img/atelier.jpg");
 }
-.servicio-img-5{
-    background-image: url("../img/comunidad.jpeg"); /* Imagen de fondo */
+
+.servicio-img-5 {
+    background-image: url("../img/comunidad.jpeg");
 }
-.servicio h3{
-    font-family: "Instrument Serif", sans-serif; /* Fuente Instrument */
-    font-weight: 100; /* Texto en negrita */
+
+.servicio h3 {
+    font-family: "Instrument Serif", sans-serif;
+    font-weight: 100;
     font-style: normal;
     font-size: 30px;
-    color:#4b2613;
-    margin: 0 auto;
+    color: #4b2613;
+    margin: 0;
     text-align: center;
-    padding: 50px 50px;
+    padding: 0;
 }
 
 .servicio:hover {
@@ -233,31 +244,35 @@ a {
     background-color: #f7860a;
     background-image: none;
 }
+
 .servicio h3:hover {
     color: #fff;
 }
+
 .servicio:hover::after {
     content: "Conocé más";
     position: absolute;
-    top: 55%;  /* Ajustamos para que esté debajo del h3 */
-    left: 55%;
-    transform: translate(-60%, 60%);  /* Centrado horizontal y ajustado verticalmente */
-    border-bottom: 2px solid #4b2613; /* Agrega un subrayado suave */
+    top: 70%;  /* Ajustamos para que esté debajo del h3 */
+    left: 50%;  /* Centramos horizontalmente */
+    transform: translateX(-50%);  /* Ajustamos el centrado */
+    border-bottom: 2px solid #4b2613;
     color: #fff;
     padding: 5px 3px;
     border-radius: 5px;
     font-weight: 100;
-    font-size: 12px;
+    font-size: 14px;  /* Aumentamos un poco el tamaño de la fuente */
     opacity: 1;
     transition: opacity 0.3s;
-    font-family: "Nunito", sans-serif; /* Fuente Instrument */
+    font-family: "Nunito", sans-serif;
     font-style: normal;
 }
+
 .servicio::after {
     content: "";
     opacity: 0; /* El pseudo-elemento está oculto por defecto */
     transition: opacity 0.3s;
 }
+
 /* Pantalla de cada servicio */
 /* Detalles de servicios ocultos por defecto */
 /* Estilos generales */
@@ -578,23 +593,28 @@ iframe {
     .navbar .hamburguesa i {
         color: #4b2613; /* Cambia el color del ícono hamburguesa */
     }
-    .servicio {
-        width: 200px; /* Hacemos que los contenedores sean más pequeños */
-        height: 200px;
-        display: block;/* Para pantallas pequeñas, los contenedores se muestran en fila */
-        margin: 0 auto; /* Centra los contenedores en la pantalla */
+
+    #servicios {
+        padding: 40px 20px; /* Reducir el padding en pantallas más pequeñas */
+        grid-template-columns: 2fr; /* Un solo elemento por fila */
     }
 
-    /* Ajustamos el tamaño del texto dentro de los contenedores */
+    .servicio {
+        width: 200px; /* Ocupa el 100% del ancho del contenedor */
+        height: 200px; /* Deja que la altura sea flexible */
+    }
+
     .servicio h3 {
-        font-size: 20px;
-        margin: 0 auto;
-        text-align: center;
+        font-size: 24px; /* Reducir el tamaño de la fuente en móviles */
+        padding: 20px; /* Añadir algo de espacio alrededor */
     }
 
     .servicio:hover::after {
-        font-size: 12px; /* Ajuste de tamaño para el texto "Conocer más" */
+        font-size: 12px;  /* Reducir el tamaño del texto "Conocé más" */
+        padding: 3px 2px;
     }
+
+
     .navegacion a{
         font-size: 14px;
     }
@@ -645,7 +665,7 @@ iframe {
         width: auto;
         height: 4rem;
     }
-}
+
 
 /* Media query para pantallas muy pequeñas (menos de 480px) */
 @media screen and (max-width: 480px) {
@@ -788,22 +808,25 @@ iframe {
     .navbar .hamburguesa i {
         color: #4b2613; /* Cambia el color del ícono hamburguesa */
     }
-    .servicio {
-        width: 200px; /* Hacemos que los contenedores sean más pequeños */
-        height: 200px;
-        display: block;/* Para pantallas pequeñas, los contenedores se muestran en fila */
-        margin: 0 auto; /* Centra los contenedores en la pantalla */
+    #servicios {
+        padding: 40px 20px; /* Reducir el padding en pantallas más pequeñas */
+        grid-template-columns: 1fr; /* Un solo elemento por fila */
     }
 
-    /* Ajustamos el tamaño del texto dentro de los contenedores */
-    .servicio h3 {
-        font-size: 20px;
+    .servicio {
+        width: 300px; /* Ocupa el 100% del ancho del contenedor */
+        height: 300px; /* Deja que la altura sea flexible */
         margin: 0 auto;
-        text-align: center;
+    }
+
+    .servicio h3 {
+        font-size: 24px; /* Reducir el tamaño de la fuente en móviles */
+        padding: 20px; /* Añadir algo de espacio alrededor */
     }
 
     .servicio:hover::after {
-        font-size: 12px; /* Ajuste de tamaño para el texto "Conocer más" */
+        font-size: 12px;  /* Reducir el tamaño del texto "Conocé más" */
+        padding: 3px 2px;
     }
     .navegacion a{
         font-size: 14px;
