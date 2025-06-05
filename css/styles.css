@@ -494,9 +494,8 @@ iframe {
 /* Estilos para la imagen */
 .imagen-container img{
     margin: 10px 0;
-    width: auto;
-    height: 3rem;
-
+    width: 100px;
+    height: auto;
 }
 .imagen-container:hover{
     color: #f7860a;
@@ -676,8 +675,8 @@ iframe {
 
     .imagen-container img{
         margin: 20px 0;
-        width: auto;
-        height: 4rem;
+        width: 100px;
+        height: auto;
     }
     .redes-sociales a{
         font-size: 14px;
